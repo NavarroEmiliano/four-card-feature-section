@@ -30,6 +30,8 @@ picture {
   grid-column: 1;
   min-block-size: 100vh;
   place-content: center;
+  padding-block: 4rem;
+  gap: 4rem;
 }
 
 .header-container {
@@ -58,20 +60,50 @@ picture {
 }
 
 .cards {
-  display: grid;
-  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   max-inline-size: 311px;
+  block-size: auto;
 }
-.cards__card h3 {
+.cards__card {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 15px 15px 50px -30px rgba(0, 0, 0, 0.5);
+}
+.cards__card__border {
+  position: absolute;
+  inline-size: 100%;
+  block-size: 0.25rem;
+}
+.cards__card .border-supervisor {
+  background-color: #44D3D2;
+}
+.cards__card .border-team-builder {
+  background-color: #EA5454;
+}
+.cards__card .border-karma {
+  background-color: #FCAE4A;
+}
+.cards__card .border-calculator {
+  background-color: #549EF2;
+}
+.cards__card__content {
+  padding: 1.9rem;
+}
+.cards__card__content h3 {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.cards__card p {
-  font: 0.8rem;
+.cards__card__content p {
+  font-size: 0.8rem;
   opacity: 50%;
   letter-spacing: 0.09px;
+  margin-block-start: 0.5rem;
 }
-.cards__card img {
+.cards__card__content img {
+  margin-block-start: 1rem;
   inline-size: 57px;
   block-size: 57px;
   margin-inline-start: auto;
