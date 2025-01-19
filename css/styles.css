@@ -80,6 +80,7 @@ picture {
   gap: 2rem;
   max-inline-size: 311px;
   block-size: auto;
+  background-color: white;
 }
 .cards__card {
   position: relative;
