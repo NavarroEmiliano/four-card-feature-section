@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  min-block-size: 100vh;
+  line-height: 1.5;
+  font-family: "Poppins", serif;
+  color: #4D4F62;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.main-container {
+  display: grid;
+  grid-column: 1;
+  min-block-size: 100vh;
+  place-content: center;
+}
+
+.header-container {
+  max-inline-size: 311px;
+}
+.header-container h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.17px;
+  font-weight: 200;
+  text-align: center;
+}
+.header-container h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.17px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.9rem;
+}
+.header-container h6 {
+  font-size: 0.938rem;
+  letter-spacing: 0.1px;
+  line-height: 1.66;
+  text-align: center;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.cards {
+  display: grid;
+  grid-column: 1;
+  max-inline-size: 311px;
+}
+.cards__card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.cards__card p {
+  font: 0.8rem;
+  opacity: 50%;
+  letter-spacing: 0.09px;
+}
+.cards__card img {
+  inline-size: 57px;
+  block-size: 57px;
+  margin-inline-start: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
