@@ -37,26 +37,40 @@ picture {
 .header-container {
   max-inline-size: 311px;
 }
+.header-container h1,
 .header-container h2 {
   font-size: 1.5rem;
   letter-spacing: 0.17px;
-  font-weight: 200;
   text-align: center;
 }
+.header-container h2 {
+  font-weight: 200;
+}
 .header-container h1 {
-  font-size: 1.5rem;
-  letter-spacing: 0.17px;
   font-weight: 600;
-  text-align: center;
   margin-bottom: 0.9rem;
 }
 .header-container h6 {
-  font-size: 0.938rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1px;
   line-height: 1.66;
   text-align: center;
   font-weight: 400;
   opacity: 50%;
+}
+@media (min-width: 70rem) {
+  .header-container {
+    max-inline-size: 1110px;
+  }
+  .header-container h1,
+  .header-container h2 {
+    font-size: 2.25rem;
+    letter-spacing: 0.25px;
+  }
+  .header-container h6 {
+    max-inline-size: 54ch;
+    margin-inline: auto;
+  }
 }
 
 .cards {
@@ -107,6 +121,31 @@ picture {
   inline-size: 57px;
   block-size: 57px;
   margin-inline-start: auto;
+}
+
+@media (min-width: 70rem) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "cyan red blue" "cyan orange blue";
+    max-inline-size: 1110px;
+    inline-size: 100%;
+  }
+  .cards .cyan {
+    align-self: center;
+    grid-area: cyan;
+  }
+  .cards .red {
+    grid-area: red;
+  }
+  .cards .orange {
+    grid-area: orange;
+  }
+  .cards .blue {
+    align-self: center;
+    grid-area: blue;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
