@@ -38,7 +38,7 @@ picture {
     grid-column: 1;
     min-block-size: 100vh;
     place-content: center;
-    padding-block: 4rem;
+    padding-block: clamp(1rem, calc(1rem + 1.5vh), 4rem);
     gap: 4rem;
 }
 
