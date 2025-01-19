@@ -28,15 +28,20 @@ picture {
 
 .main-container {
   display: grid;
-  grid-column: 1;
   min-block-size: 100vh;
-  place-content: center;
-  padding-block: clamp(1rem, 1rem + 1.5vh, 4rem);
+  place-items: center;
+  padding-block: 1rem;
   gap: 4rem;
+}
+@media (min-width: 70rem) {
+  .main-container {
+    padding-block: 0;
+    gap: 0;
+  }
 }
 
 .header-container {
-  max-inline-size: 311px;
+  max-inline-size: 19.5rem;
 }
 .header-container h1,
 .header-container h2 {
@@ -61,7 +66,7 @@ picture {
 }
 @media (min-width: 70rem) {
   .header-container {
-    max-inline-size: 1110px;
+    max-inline-size: 69rem;
   }
   .header-container h1,
   .header-container h2 {
@@ -78,7 +83,7 @@ picture {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-inline-size: 311px;
+  max-inline-size: 19.5rem;
   block-size: auto;
 }
 .cards__card {
@@ -129,7 +134,7 @@ picture {
   .cards__card__content img {
     inline-size: 64px;
     block-size: 64px;
-    margin-block-start: 2.6rem;
+    /*                margin-block-start: 2.6rem; */
   }
 }
 
