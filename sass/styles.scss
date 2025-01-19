@@ -99,10 +99,10 @@ picture {
         position: relative;
         border-radius: 0.5rem;
         overflow: hidden;
-    background-color: white;
+        background-color: white;
 
 
-        box-shadow: -1px 15px 33px -13px rgba(0,0,0,0.26);
+        box-shadow: -1px 15px 33px -13px rgba(0, 0, 0, 0.26);
 
 
         &__border {
@@ -150,9 +150,9 @@ picture {
                 margin-inline-start: auto;
 
                 @media (min-width: 70rem) {
-                inline-size: 64px;
-                block-size: 64px;
-                margin-block-start: 2.6rem;
+                    inline-size: 64px;
+                    block-size: 64px;
+                    margin-block-start: 2.6rem;
                 }
             }
 
