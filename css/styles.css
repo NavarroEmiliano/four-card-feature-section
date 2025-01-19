@@ -80,12 +80,12 @@ picture {
   gap: 2rem;
   max-inline-size: 311px;
   block-size: auto;
-  background-color: white;
 }
 .cards__card {
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
+  background-color: white;
   box-shadow: -1px 15px 33px -13px rgba(0, 0, 0, 0.26);
 }
 .cards__card__border {
