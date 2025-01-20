@@ -54,7 +54,7 @@ picture {
 }
 .header-container h1 {
   font-weight: 600;
-  margin-bottom: 0.9rem;
+  margin-block-end: clamp(0.1rem, 0.1rem + 1vh, 0.9rem);
 }
 .header-container p {
   font-size: 0.9rem;
