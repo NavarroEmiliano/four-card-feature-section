@@ -42,8 +42,9 @@ picture {
     min-block-size: 100vh;
     gap: 4rem;
 
-    @media (min-width: 70rem) {
-        row-gap: calc(0.1rem + 2vh);
+
+    @media (min-width: 70rem) and (max-height:45rem) {
+        gap: 1rem;
     }
 }
 
