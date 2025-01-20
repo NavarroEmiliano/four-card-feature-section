@@ -69,7 +69,7 @@ picture {
 
     h1 {
         font-weight: 600;
-        margin-block-end: clamp(0.1rem, calc(0.1rem + 1vh), 0.9rem);
+        margin-block-end: 1rem;
     }
 
     p {
@@ -93,6 +93,13 @@ picture {
         p {
             max-inline-size: 58ch;
             margin-inline: auto;
+        }
+    }
+
+    @media (min-width: 70rem) and (max-height:45rem) {
+        h1 {
+            margin-block-end: 0;
+
         }
     }
 }
