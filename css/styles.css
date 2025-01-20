@@ -32,7 +32,13 @@ picture {
   justify-content: center;
   align-items: center;
   min-block-size: 100vh;
+  margin-block: 2rem;
   gap: 4rem;
+}
+@media (min-width: 70rem) {
+  .main-container {
+    margin-block: 0rem;
+  }
 }
 @media (min-width: 70rem) and (max-height: 45rem) {
   .main-container {
