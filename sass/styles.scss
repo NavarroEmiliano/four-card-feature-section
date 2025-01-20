@@ -98,7 +98,6 @@ picture {
     @media (min-width: 70rem) and (max-height:45rem) {
         h1 {
             margin-block-end: 0;
-
         }
     }
 }
@@ -167,7 +166,6 @@ picture {
                 @media (min-width: 70rem) {
                     inline-size: 64px;
                     block-size: 64px;
-                    /*                margin-block-start: 2.6rem; */
                 }
             }
 
@@ -178,6 +176,9 @@ picture {
 
     }
 
+    @media (min-width: 70rem) and (max-height:45rem) {
+        gap: 1rem;
+    }
 
 }
 
