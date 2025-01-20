@@ -35,15 +35,15 @@ picture {
 }
 
 .main-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-block-size: 100vh;
-    place-items: center;
-    padding-block: 1rem;
     gap: 4rem;
 
     @media (min-width: 70rem) {
-        padding-block: 0;
-        gap: 0;
+        row-gap: calc(0.1rem + 2vh);
     }
 }
 
